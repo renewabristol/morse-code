@@ -10,7 +10,7 @@ whether you need a framework
 
 ## extension
 
-translate morse code back into english, perhaps with built in unit tests which tell you whether you've done something correctly
+translate morse code back into english, perhaps with built in unit tests which tell you whether you've done something correctly.
 
 ### useful links
 
