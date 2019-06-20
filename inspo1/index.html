@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title>morse-code-translator example</title>
+
+    <script src="./inspo.js"></script>
+
+    <style type="text/css">
+      label {
+        width: 200px;
+        text-align: right;
+        float: left;
+        margin-right: 10px;
+      }
+
+      textarea {
+        width: 400px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="form">
+      <div>
+        <label for="in">Message:</label>
+        <textarea id="in" onkeyup="update()"></textarea>
+      </div>
+      <div>
+        <label for="out">Morse Code:</label>
+        <textarea id="out" readonly></textarea>
+      </div>
+    </form>
+
+    <script type="text/javascript">
+      var translator = new MorseCodeTranslator(),
+        textIn = document.getElementById("in"),
+        textOut = document.getElementById("out"),
+        update = function() {
+          textOut.value = translator.toMorseCode(textIn.value);
+        };
+    </script>
+  </body>
+</html>

@@ -18,3 +18,6 @@ https://morsecode.scphillips.com/morse2.html
 https://morsecode.scphillips.com/morse.html
 https://www.quora.com/What-separates-words-in-Morse-code-Whats-the-difference-between-a-separation-dash-and-T
 http://www.codebug.org.uk/learn/step/541/morse-code-timing-rules/
+
+inspo/inspiration source:
+https://github.com/topics/morse-code?l=javascript&o=desc&s=stars
