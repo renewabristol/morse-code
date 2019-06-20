@@ -40,7 +40,7 @@ const alphabetEquivalents = {
 
 const showTextInOtherBox = () => {
   englishInput = document.getElementById("englishInput");
+  englishInput = event.target.value;
   morseOutput = document.getElementById("morseOutput");
-  englishInput = event.target;
-  console.log(event.target.value);
+  morseOutput.value = englishInput;
 };
