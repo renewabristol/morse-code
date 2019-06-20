@@ -10,17 +10,20 @@
   </head>
   <body>
     <h1>Morse translator</h1>
-    <form action="">
-      <div class="translationBox">
-        translate the following text:
-        <div>
-          <input class="translation" type="text" />
-        </div>
+    <blockquote>
+      You can use this tool to translate english text into morse code
+    </blockquote>
+    <form>
+      <div class="translation">
+        <textarea
+          placeholder="Type the text you want to translate here"
+          oninput="tracerBullet()"
+        ></textarea>
       </div>
-      <div class="translationBox">
-        equivalent morse will appear below:
-        <div class="translation">wsdf</div>
+      <div class="translation">
+        <textarea placeholder="Morse result will appear here"></textarea>
       </div>
     </form>
   </body>
+  <script type="text/javascript" src="./index.js"></script>
 </html>
