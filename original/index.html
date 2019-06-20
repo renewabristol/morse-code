@@ -17,13 +17,16 @@
       <div class="translation">
         <textarea
           placeholder="Type the text you want to translate here"
-          oninput="tracerBullet()"
+          id="englishInput"
+          oninput="showTextInOtherBox()"
         ></textarea>
       </div>
       <div class="translation">
-        <textarea placeholder="Morse result will appear here"></textarea>
+        <textarea
+          placeholder="Morse result will appear here"
+          id="morseOutput"
+        ></textarea>
       </div>
     </form>
   </body>
-  <script type="text/javascript" src="./index.js"></script>
 </html>
