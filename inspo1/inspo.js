@@ -58,6 +58,7 @@ function MorseCodeTranslator() {
   };
 
   MorseCodeTranslator.prototype.toMorseCode = function(text) {
+    console.log("text: " + text);
     var morseCode = "";
 
     for (var i = 0; i < text.length; i++) {
@@ -69,12 +70,13 @@ function MorseCodeTranslator() {
           !thisCharIsSpace && !thisCharIsFinal && !nextCharIsSpace;
 
       morseCode += this.dictionary[textChar];
+      console.log("this.dictionary[textChar]" + this.dictionary[textChar]);
 
       if (shouldAppendSpace) {
         morseCode += " ";
       }
     }
-
+    console.log("morseCode: " + morseCode);
     return morseCode;
   };
 }
