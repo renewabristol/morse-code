@@ -47,7 +47,7 @@ const translateToMorse = () => {
 
   // loop over each character in the input
   for (i = 0; i < englishInput.length; i++) {
-    translation += englishInput[i];
+    translation += morseEquivalents[englishInput[i]];
     console.log("translation: " + translation);
     console.log("morseEquivalent: " + morseEquivalents[englishInput[i]]);
   }
