@@ -16,9 +16,12 @@ form {
 textarea {
   width: 80%;
   border: none;
-  height: auto;
+  height: 4em;
   resize: none;
-  vertical-align: middle;
+}
+
+textarea:focus {
+  outline: none;
 }
 
 .translation {
