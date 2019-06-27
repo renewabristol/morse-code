@@ -1,4 +1,4 @@
-const alphabetEquivalents = {
+const morseEquivalents = {
   A: ".-",
   B: "-...",
   C: "-.-.",
@@ -38,9 +38,19 @@ const alphabetEquivalents = {
   "0": "-----"
 };
 
-const showTextInOtherBox = () => {
+const translateToMorse = () => {
+  translation = "";
   englishInput = document.getElementById("englishInput");
   englishInput = event.target.value;
   morseOutput = document.getElementById("morseOutput");
-  morseOutput.value = englishInput;
+  englishInput = englishInput.toUpperCase();
+
+  // loop over each character in the input
+  for (i = 0; i < englishInput.length; i++) {
+    translation += englishInput[i];
+    console.log("translation: " + translation);
+    console.log("morseEquivalent: " + morseEquivalents[englishInput[i]]);
+  }
+  // makes the translation appear in the output box
+  morseOutput.value = translation;
 };
