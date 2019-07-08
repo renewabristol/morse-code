@@ -6,25 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./index.css" type="text/css" />
     <script src="index.js"></script>
-    <title>personal morse project</title>
+    <title>simple morse project</title>
   </head>
   <body>
-    <h1>Morse translator</h1>
-    <blockquote>
-      You can use this tool to translate english text into morse code
-    </blockquote>
     <form>
       <div class="translation">
         <textarea
-          placeholder="Type the text you want to translate here"
+          placeholder="Type here"
           id="englishInput"
           oninput="translateToMorse()"
         ></textarea>
       </div>
       <div class="translation">
         <textarea
+          readonly
           contenteditable="false"
-          placeholder="Morse result will appear here"
+          placeholder="Morse translation"
           id="morseOutput"
         ></textarea>
       </div>
